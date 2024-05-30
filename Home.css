@@ -1,0 +1,43 @@
+body{
+   background: linear-gradient(270deg, #ffc400, #ff0099);
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   margin: 0;
+
+}
+
+.apple{
+   width: 300px; 
+   height: 75px;
+   border-radius: 10px;
+   color: rgb(0, 0, 0);
+   background-color: hsl(0, 0%, 11%);
+   font-size: 3rem;
+   font-weight: bold;
+   cursor: pointer;
+   border: none;
+   box-shadow: 0px 3px 20px;
+}
+
+
+#click{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+   padding: 20px;
+
+}
+
+.apple:hover{
+   background-color: hsl(0, 0%, 15%);
+   font-size: 3.25rem;
+   box-shadow: 0px  3px 15px purple;
+}
+
+.apple:active{
+   background-color: hsl(0, 0%, 20%);
+   font-size: 3.5rem;
+   box-shadow: 0px 3px 20px purple;
+}
+
