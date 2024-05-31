@@ -1,5 +1,6 @@
 body{
-   background: linear-gradient(270deg, #ffc400, #ff0099);
+   background-image:url(https://i.ytimg.com/vi/WQjpiLBIkuE/maxresdefault.jpg);
+   background-size: 100%;
    align-items: center;
    justify-content: center;
    display: flex;
