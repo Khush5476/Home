@@ -1,9 +1,11 @@
 body{
-   background-image:url(https://i.ytimg.com/vi/WQjpiLBIkuE/maxresdefault.jpg);
-   background-size: 100%;
+   background-image:url(https://www.shutterstock.com/image-vector/plane-night-sky-airplane-flying-600nw-1711248121.jpg);
+   background-size: cover;
+   background-position: center;
    align-items: center;
    justify-content: center;
    margin: 0;
+
 
 }
 
@@ -69,6 +71,7 @@ body{
    overflow: hidden;
    animation: fade;
    animation-duration: 1.5s;
+   
 }
 
 .slider img{
