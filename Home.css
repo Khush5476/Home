@@ -71,11 +71,71 @@ body{
    overflow: hidden;
    animation: fade;
    animation-duration: 1.5s;
+   position: absolute;
+}
+
+.welcome{
+   animation: fall 1s ease-in-out; 
+   display: flex;
+   flex-direction: row;
+   font-size: 4rem;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background-color: rgba(255, 255, 255, .1);
+   backdrop-filter: blur(30px);
+   border: 2px solid rgba(255, 255, 255, .2);
+   border-radius: 20px;
+}
+
+.p{
+   animation: fall 1s ease-in-out; 
+   font-size: 2rem;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(255, 255, 255, .1);
+   backdrop-filter: blur(30px);
+   border: 2px solid rgba(255, 255, 255, .2);
+   border-radius: 10px;
+}
+
+.projects{
+   animation: fall 1s ease-in-out; 
+   font-size: 2rem;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(255, 255, 255, .03);
+   backdrop-filter: blur(10px);
+   border: 2px solid rgba(255, 255, 255, .2);
+   border-radius: 10px;
+}
+
+
+.me{
+   width: 333px;
+   height: 444px;
+   border-radius: 20px;
+}
+
+.translate{
+   animation: fall 1s ease-in-out; 
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+
 }
 
 .slider img{
-   width: 1000px;
-   height: 500px;
+   width: 500px;
+   height: 250px;
    justify-content: center;
    margin: auto;
    display: none;
@@ -83,6 +143,9 @@ body{
    box-shadow: 0px 3px 20px black, -0px 3px 20px black;
    animation: fade;
    animation-duration: 1.5s;
+   align-items: center;
+   
+
 }
 
 
@@ -95,13 +158,13 @@ img.displaySlide{
 
 img.displaySlide:hover{
    box-shadow: 0px 3px 50px black;
-   width: 1010px;
-   height: 505px;
+   width: 510px;
+   height: 255px;
 }
 
 .slider button{
    position: absolute;
-   top: 45%;
+   top: 35%;
    font-size: 2rem;
    background-color: hsla(0, 0%, 0%, 0.5);
    padding: 10px 15px;
@@ -113,15 +176,17 @@ img.displaySlide:hover{
    
 }
 
-.previous{
-   left: 0;
+.prev{
+   left: 550px;
 }
+
 .next{
-   right: 0;
+   right: 550px;
+
 }
 
 @keyframes fade {
-   from {opacity: .5;}
+   from {opacity: .1;}
    to {opacity: 1;}
 }
 
@@ -129,6 +194,24 @@ img.displaySlide:hover{
    from {opacity: 1;}
    to {opacity: .5;}
 }
+
+@keyframes fall {
+   0% {
+     transform: translateY(-100%);
+   }
+}
+
+
+@keyframes move {
+   0% {
+     transform: translatey(-100%);
+   }
+   100% {
+     transform: translatey(0%);
+   }
+ }
+
+
 
 
 .slider button:hover{
