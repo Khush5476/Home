@@ -33,7 +33,7 @@ body{
    list-style-type: none;
    border: 5px black;
    display: grid;
-   grid-template-columns: repeat(7, 1fr);
+   grid-template-columns: repeat(8, 1fr);
    text-align: center;
    background-color: hsl(0, 0%, 5%, 0.5);
 
@@ -86,6 +86,8 @@ body{
    backdrop-filter: blur(30px);
    border: 2px solid rgba(255, 255, 255, .2);
    border-radius: 20px;
+   text-align: center;
+   margin: 0 auto; 
 }
 
 .p{
@@ -100,6 +102,9 @@ body{
    backdrop-filter: blur(30px);
    border: 2px solid rgba(255, 255, 255, .2);
    border-radius: 10px;
+   text-align: center;
+   margin: 0 auto; 
+
 }
 
 .projects{
@@ -114,6 +119,9 @@ body{
    backdrop-filter: blur(10px);
    border: 2px solid rgba(255, 255, 255, .2);
    border-radius: 10px;
+   text-align: center;
+   text-align: center;
+   margin: 0 auto; 
 }
 
 
@@ -144,6 +152,8 @@ body{
    animation: fade;
    animation-duration: 1.5s;
    align-items: center;
+   text-align: center;
+   margin: 0 auto; 
    
 
 }
@@ -198,6 +208,9 @@ img.displaySlide:hover{
 @keyframes fall {
    0% {
      transform: translateY(-100%);
+   }
+   100%{
+      transform: translateY(0%);
    }
 }
 
