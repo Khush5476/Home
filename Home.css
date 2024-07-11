@@ -225,7 +225,7 @@ img.displaySlide:hover{
 
 }
 
-@media (max-width:1400px) {
+@media (max-width:75em) {
    .click ul{
        grid-template-columns: repeat(4, 2fr);
        
