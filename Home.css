@@ -74,20 +74,50 @@ body{
    position: absolute;
 }
 
+
+body{
+   min-height: 100vh;
+   align-items: center;
+   justify-content: center;
+   background-color: #1d1f20;
+}
+h1{
+   font-family: "Incosolata", Consolas, monospace;
+   font-size: 4em;
+   color: #d7b94c;
+}
 .welcome{
    animation: fall 1s ease-in-out; 
+   font-size: 3rem;
+   color: white;
    display: flex;
    flex-direction: row;
-   font-size: 4rem;
    justify-content: center;
-   align-items: center;
-   color: white;
-   background-color: rgba(255, 255, 255, .1);
-   backdrop-filter: blur(30px);
-   border: 2px solid rgba(255, 255, 255, .2);
-   border-radius: 20px;
-   text-align: center;
    margin: 0 auto; 
+   position: relative;
+   max-width: 770px;
+   background-color: #1d1f20;
+   border-radius: 10px;
+}
+.welcome::after{
+   content: '|';
+   position: absolute;
+   right: 0;
+   color: white;
+   background-color: #1d1f20;
+   width: 100%;
+   animation: typing 3s steps(20) alternate infinite,
+               line 1s infinite;
+}
+@keyframes typing{
+   to{
+       width: 0%;
+   }
+}
+@keyframes line {
+   50%{
+       color: transparent;
+   }
 }
 
 .p{
@@ -115,9 +145,9 @@ body{
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   background-color: rgba(255, 255, 255, .03);
+   /* background-color: rgba(255, 255, 255, .03);
    backdrop-filter: blur(10px);
-   border: 2px solid rgba(255, 255, 255, .2);
+   border: 2px solid rgba(255, 255, 255, .2); */
    border-radius: 10px;
    text-align: center;
    text-align: center;
