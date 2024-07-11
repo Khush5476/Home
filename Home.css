@@ -87,21 +87,22 @@ h1{
    color: #d7b94c;
 }
 .welcome{
+   position: relative;
    animation: fall 1s ease-in-out; 
-   font-size: 3rem;
+   font-size: 2.5rem;
    color: white;
    display: flex;
    flex-direction: row;
    justify-content: center;
    margin: 0 auto; 
-   position: relative;
-   max-width: 770px;
+   
    background-color: #1d1f20;
    border-radius: 10px;
 }
 .welcome::after{
-   content: '|';
    position: absolute;
+   content: '|';
+
    right: 0;
    color: white;
    background-color: #1d1f20;
@@ -110,8 +111,12 @@ h1{
                line 1s infinite;
 }
 @keyframes typing{
+
+   from{
+      width:75%;
+   }
    to{
-       width: 0%;
+       width: 25%;
    }
 }
 @keyframes line {
@@ -225,7 +230,7 @@ img.displaySlide:hover{
 
 }
 
-@media (max-width:75em) {
+@media (max-width:1400px) {
    .click ul{
        grid-template-columns: repeat(4, 2fr);
        
